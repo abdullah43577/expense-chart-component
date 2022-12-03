@@ -14,16 +14,6 @@ fetch("./data.json")
     });
   });
 
-console.log(day);
-console.log(amount);
-
-const testArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-let answer = 0;
-const resultaccumulator = testArray.reduce((acc, value) => acc + value, 0);
-
-console.log(resultaccumulator);
-
 Chart.defaults.font.family = "DM Sans";
 const result = new Chart(barChart, {
   type: "bar",
