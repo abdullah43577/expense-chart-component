@@ -49,17 +49,12 @@ Users should be able to:
 
 For the first time ever, I used my first library coding a website. I used the chart.js library to render a chart based on some data I provided in my JSON code.
 
-I also used the fetch API() method to fetch the JSON data from the folder where it is situated
-
 ```js
-fetch("./data.json")
-  .then((response) => response.json())
-  .then((json) => {
-    json.forEach((data) => {
-      day.push(data.day);
-      amount.push(data.amount);
-    });
-  });
+jsonData.forEach((data) => {
+  // console.log(data);
+  day.push(data.day);
+  amount.push(data.amount);
+});
 
 Chart.defaults.font.family = "DM Sans";
 const result = new Chart(barChart, {

@@ -1,18 +1,16 @@
 "use strict";
+import jsonData from "./data.json" assert { type: "json" };
 const barChart = document.getElementById("barChart__Image");
 
-// converting the json data into readable format
 let day = [];
 let amount = [];
 
-fetch("./data.json")
-  .then((response) => response.json())
-  .then((json) => {
-    json.forEach((data) => {
-      day.push(data.day);
-      amount.push(data.amount);
-    });
-  });
+// looping through the array of objects and then pushing each respective values to the arrays as needed
+jsonData.forEach((data) => {
+  // console.log(data);
+  day.push(data.day);
+  amount.push(data.amount);
+});
 
 Chart.defaults.font.family = "DM Sans";
 const result = new Chart(barChart, {
