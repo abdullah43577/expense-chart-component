@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div id="monthly_Balance_Section">
+          <p>My balance</p>
+          <h3>$921.48</h3>
+        </div>
+        <div id="logo">
+          <figcaption>
+            <img src="./images/logo.svg" alt="svg logo" />
+          </figcaption>
+        </div>
+      </section>
+      <section class="header__main">
+        <h3>Spending - Last 7 days</h3>
+        <canvas id="barChart__Image"></canvas>
+        <div class="__borderBottom"></div>
+
+        <!-- The total section -->
+        <div class="container">
+          <p class="gray">Total this month</p>
+          <div class="this_month">
+            <h1>$478.33</h1>
+          </div>
+          <div class="last_month">
+            <p>+2.4%</p>
+            <p class="gray">from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" target="_blank">Abdullah Ayoola</a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

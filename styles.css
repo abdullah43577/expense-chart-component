@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f3f3f3;
+  --gray: hsl(28, 10%, 53%);
+  --darkBrown: hsl(25, 47%, 15%);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  position: relative;
+}
+
+main {
+  width: 500px;
+  height: auto;
+  /* background-color: white; */
+}
+
+section.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#monthly_Balance_Section > p {
+  font-size: 14px;
+  color: var(--white);
+}
+
+#monthly_Balance_Section > h3 {
+  color: var(--white);
+  font-size: 20px;
+}
+
+figcaption {
+  width: 50px;
+}
+
+figcaption > img {
+  width: 100%;
+}
+
+.header__main {
+  background-color: var(--white);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+canvas {
+  margin-top: 40px;
+}
+
+.__borderBottom {
+  width: 100%;
+  background-color: gray;
+  height: 1px;
+  margin-top: 20px;
+  opacity: 0.2;
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+}
+
+.container > p {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.this_month {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: var(--darkBrown);
+}
+
+.last_month {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 14px;
+}
+
+.last_month > :first-child {
+  color: var(--darkBrown);
+  font-weight: bold;
+}
+
+.gray {
+  color: var(--gray);
+}
+
+/* footer section */
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 510px) {
+  main {
+    width: 450px;
+  }
+}
+
+@media (max-width: 460px) {
+  main {
+    width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  main {
+    width: 380px;
+  }
+}
+
+@media (max-width: 390px) {
+  main {
+    width: 340px;
+  }
+}
