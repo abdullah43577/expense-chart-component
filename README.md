@@ -10,8 +10,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful Resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -44,46 +42,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Desktop-first workflow
-
-### What I learned
-
-For the first time ever, I used my first library coding a website. I used the chart.js library to render a chart based on some data I provided in my JSON code.
-
-```js
-jsonData.forEach((data) => {
-  // console.log(data);
-  day.push(data.day);
-  amount.push(data.amount);
-});
-
-Chart.defaults.font.family = "DM Sans";
-const result = new Chart(barChart, {
-  type: "bar",
-  data: {
-    labels: day,
-    datasets: [
-      {
-        label: "# of Spending",
-        data: amount,
-        borderWidth: 1,
-        backgroundColor: "hsl(10, 79%, 65%)",
-        hoverBackgroundColor: "hsl(186, 34%, 60%)",
-      },
-    ],
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
-  },
-});
-```
-
-### Useful resources
-
-- [Resource](https://www.chartjs.org/) - This helped me render the chart on the webpage based on some data provided to the method used in the code. Still learning the concepts though.
 
 ## Author
 

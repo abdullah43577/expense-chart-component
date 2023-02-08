@@ -11,7 +11,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js" type="module"></script>
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
@@ -29,7 +29,51 @@
       </section>
       <section class="header__main">
         <h3>Spending - Last 7 days</h3>
-        <canvas id="barChart__Image"></canvas>
+        <div id="barChart__Image">
+          <ul>
+            <li>
+              <div class="details"></div>
+              <div class="mon red" data-value="mon"></div>
+              mon
+            </li>
+
+            <li>
+              <div class="details"></div>
+              <div class="tue red" data-value="tue"></div>
+              tue
+            </li>
+
+            <li>
+              <div class="details"></div>
+              <div class="wed red" data-value="wed"></div>
+              wed
+            </li>
+
+            <li>
+              <div class="details"></div>
+              <div class="thur red" data-value="thur"></div>
+              thur
+            </li>
+
+            <li>
+              <div class="details"></div>
+              <div class="fri red" data-value="fri"></div>
+              fri
+            </li>
+
+            <li>
+              <div class="details"></div>
+              <div class="sat red" data-value="sat"></div>
+              sat
+            </li>
+
+            <li>
+              <div class="details"></div>
+              <div class="sun red" data-value="sun"></div>
+              sun
+            </li>
+          </ul>
+        </div>
         <div class="__borderBottom"></div>
 
         <!-- The total section -->
@@ -58,6 +102,5 @@
         >
       </div>
     </footer>
-    <script src="script.js" type="module"></script>
   </body>
 </html>
