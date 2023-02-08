@@ -42,10 +42,8 @@ const getDetails = function (day, data) {
 };
 
 const init = function (day, data) {
-  weekdays.forEach((_weekday, i) => {
-    getDetails(day, data);
-    generateGraph(day, data);
-  });
+  getDetails(day, data);
+  generateGraph(day, data);
 };
 
 const run = () => {
